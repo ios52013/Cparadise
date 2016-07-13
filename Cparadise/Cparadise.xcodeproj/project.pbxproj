@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		7300C6D910BA0622A41D3E2E /* libPods-Cparadise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A7A6F075D0D593E9A36A19 /* libPods-Cparadise.a */; };
 		86E3451A1D36AAA2002D6EBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345191D36AAA2002D6EBC /* main.m */; };
-		86E3451D1D36AAA2002D6EBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E3451C1D36AAA2002D6EBC /* AppDelegate.m */; };
-		86E345201D36AAA2002D6EBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E3451F1D36AAA2002D6EBC /* ViewController.m */; };
 		86E345231D36AAA2002D6EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E345211D36AAA2002D6EBC /* Main.storyboard */; };
 		86E345251D36AAA2002D6EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E345241D36AAA2002D6EBC /* Assets.xcassets */; };
 		86E345281D36AAA2002D6EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E345261D36AAA2002D6EBC /* LaunchScreen.storyboard */; };
 		86E345331D36AAA2002D6EBC /* CparadiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345321D36AAA2002D6EBC /* CparadiseTests.m */; };
 		86E3453E1D36AAA2002D6EBC /* CparadiseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E3453D1D36AAA2002D6EBC /* CparadiseUITests.m */; };
+		86E345561D36B18A002D6EBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345531D36B18A002D6EBC /* AppDelegate.m */; };
+		86E345571D36B18A002D6EBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345551D36B18A002D6EBC /* ViewController.m */; };
+		86E3455D1D36B1D6002D6EBC /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86E345581D36B1D6002D6EBC /* 1.gif */; };
+		86E3455E1D36B1D6002D6EBC /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86E345591D36B1D6002D6EBC /* 2.gif */; };
+		86E3455F1D36B1D6002D6EBC /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86E3455A1D36B1D6002D6EBC /* 3.gif */; };
+		86E345601D36B1D6002D6EBC /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86E3455B1D36B1D6002D6EBC /* 4.jpg */; };
+		86E345611D36B1D6002D6EBC /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86E3455C1D36B1D6002D6EBC /* 5.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,20 +45,25 @@
 		6E1E625BB022B40C85998B2B /* Pods-Cparadise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cparadise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise.debug.xcconfig"; sourceTree = "<group>"; };
 		86E345151D36AAA2002D6EBC /* Cparadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cparadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E345191D36AAA2002D6EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		86E3451B1D36AAA2002D6EBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		86E3451C1D36AAA2002D6EBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		86E3451E1D36AAA2002D6EBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		86E3451F1D36AAA2002D6EBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		86E345221D36AAA2002D6EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		86E345241D36AAA2002D6EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86E345241D36AAA2002D6EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		86E345271D36AAA2002D6EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		86E345291D36AAA2002D6EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E345291D36AAA2002D6EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		86E3452E1D36AAA2002D6EBC /* CparadiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CparadiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E345321D36AAA2002D6EBC /* CparadiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CparadiseTests.m; sourceTree = "<group>"; };
 		86E345341D36AAA2002D6EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86E345391D36AAA2002D6EBC /* CparadiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CparadiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E3453D1D36AAA2002D6EBC /* CparadiseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CparadiseUITests.m; sourceTree = "<group>"; };
 		86E3453F1D36AAA2002D6EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E345521D36B18A002D6EBC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86E345531D36B18A002D6EBC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86E345541D36B18A002D6EBC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		86E345551D36B18A002D6EBC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		86E345581D36B1D6002D6EBC /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		86E345591D36B1D6002D6EBC /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		86E3455A1D36B1D6002D6EBC /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
+		86E3455B1D36B1D6002D6EBC /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		86E3455C1D36B1D6002D6EBC /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		B1C5ED33332E1852B04DD939 /* Pods-Cparadise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cparadise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,14 +135,13 @@
 		86E345171D36AAA2002D6EBC /* Cparadise */ = {
 			isa = PBXGroup;
 			children = (
-				86E3451B1D36AAA2002D6EBC /* AppDelegate.h */,
-				86E3451C1D36AAA2002D6EBC /* AppDelegate.m */,
-				86E3451E1D36AAA2002D6EBC /* ViewController.h */,
-				86E3451F1D36AAA2002D6EBC /* ViewController.m */,
-				86E345211D36AAA2002D6EBC /* Main.storyboard */,
-				86E345241D36AAA2002D6EBC /* Assets.xcassets */,
-				86E345261D36AAA2002D6EBC /* LaunchScreen.storyboard */,
-				86E345291D36AAA2002D6EBC /* Info.plist */,
+				86E345511D36B159002D6EBC /* Main */,
+				86E345501D36B14C002D6EBC /* Utilities */,
+				86E3454F1D36B11C002D6EBC /* DB */,
+				86E3454E1D36B110002D6EBC /* Libs */,
+				86E3454D1D36B0FE002D6EBC /* images */,
+				86E3454C1D36B0F0002D6EBC /* Category */,
+				86E3454B1D36B0D9002D6EBC /* Other */,
 				86E345181D36AAA2002D6EBC /* Supporting Files */,
 			);
 			path = Cparadise;
@@ -162,6 +171,68 @@
 				86E3453F1D36AAA2002D6EBC /* Info.plist */,
 			);
 			path = CparadiseUITests;
+			sourceTree = "<group>";
+		};
+		86E3454B1D36B0D9002D6EBC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				86E345291D36AAA2002D6EBC /* Info.plist */,
+				86E345261D36AAA2002D6EBC /* LaunchScreen.storyboard */,
+				86E345241D36AAA2002D6EBC /* Assets.xcassets */,
+				86E345521D36B18A002D6EBC /* AppDelegate.h */,
+				86E345531D36B18A002D6EBC /* AppDelegate.m */,
+				86E345541D36B18A002D6EBC /* ViewController.h */,
+				86E345551D36B18A002D6EBC /* ViewController.m */,
+				86E345211D36AAA2002D6EBC /* Main.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		86E3454C1D36B0F0002D6EBC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		86E3454D1D36B0FE002D6EBC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				86E345581D36B1D6002D6EBC /* 1.gif */,
+				86E345591D36B1D6002D6EBC /* 2.gif */,
+				86E3455A1D36B1D6002D6EBC /* 3.gif */,
+				86E3455B1D36B1D6002D6EBC /* 4.jpg */,
+				86E3455C1D36B1D6002D6EBC /* 5.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		86E3454E1D36B110002D6EBC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		86E3454F1D36B11C002D6EBC /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		86E345501D36B14C002D6EBC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		86E345511D36B159002D6EBC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +344,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E3455F1D36B1D6002D6EBC /* 3.gif in Resources */,
+				86E345611D36B1D6002D6EBC /* 5.jpg in Resources */,
+				86E345601D36B1D6002D6EBC /* 4.jpg in Resources */,
 				86E345281D36AAA2002D6EBC /* LaunchScreen.storyboard in Resources */,
+				86E3455E1D36B1D6002D6EBC /* 2.gif in Resources */,
 				86E345251D36AAA2002D6EBC /* Assets.xcassets in Resources */,
+				86E3455D1D36B1D6002D6EBC /* 1.gif in Resources */,
 				86E345231D36AAA2002D6EBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,8 +424,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86E345201D36AAA2002D6EBC /* ViewController.m in Sources */,
-				86E3451D1D36AAA2002D6EBC /* AppDelegate.m in Sources */,
+				86E345571D36B18A002D6EBC /* ViewController.m in Sources */,
+				86E345561D36B18A002D6EBC /* AppDelegate.m in Sources */,
 				86E3451A1D36AAA2002D6EBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +468,7 @@
 				86E345221D36AAA2002D6EBC /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		86E345261D36AAA2002D6EBC /* LaunchScreen.storyboard */ = {
@@ -400,6 +477,7 @@
 				86E345271D36AAA2002D6EBC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
