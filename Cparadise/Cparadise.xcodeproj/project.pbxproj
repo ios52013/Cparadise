@@ -20,6 +20,7 @@
 		86E3455F1D36B1D6002D6EBC /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86E3455A1D36B1D6002D6EBC /* 3.gif */; };
 		86E345601D36B1D6002D6EBC /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86E3455B1D36B1D6002D6EBC /* 4.jpg */; };
 		86E345611D36B1D6002D6EBC /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86E3455C1D36B1D6002D6EBC /* 5.jpg */; };
+		86E345701D36BA68002D6EBC /* HYRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E3456F1D36BA68002D6EBC /* HYRRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		86E3455A1D36B1D6002D6EBC /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
 		86E3455B1D36B1D6002D6EBC /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		86E3455C1D36B1D6002D6EBC /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		86E3456E1D36BA68002D6EBC /* HYRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRRootViewController.h; sourceTree = "<group>"; };
+		86E3456F1D36BA68002D6EBC /* HYRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRRootViewController.m; sourceTree = "<group>"; };
 		B1C5ED33332E1852B04DD939 /* Pods-Cparadise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cparadise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,6 +259,8 @@
 		86E345641D36B584002D6EBC /* RootVC */ = {
 			isa = PBXGroup;
 			children = (
+				86E3456E1D36BA68002D6EBC /* HYRRootViewController.h */,
+				86E3456F1D36BA68002D6EBC /* HYRRootViewController.m */,
 			);
 			path = RootVC;
 			sourceTree = "<group>";
@@ -492,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86E345561D36B18A002D6EBC /* AppDelegate.m in Sources */,
+				86E345701D36BA68002D6EBC /* HYRRootViewController.m in Sources */,
 				86E3451A1D36AAA2002D6EBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
