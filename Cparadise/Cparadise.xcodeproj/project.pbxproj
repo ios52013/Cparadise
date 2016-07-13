@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7300C6D910BA0622A41D3E2E /* libPods-Cparadise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A7A6F075D0D593E9A36A19 /* libPods-Cparadise.a */; };
 		86E3451A1D36AAA2002D6EBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345191D36AAA2002D6EBC /* main.m */; };
 		86E3451D1D36AAA2002D6EBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E3451C1D36AAA2002D6EBC /* AppDelegate.m */; };
 		86E345201D36AAA2002D6EBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E3451F1D36AAA2002D6EBC /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55A7A6F075D0D593E9A36A19 /* libPods-Cparadise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cparadise.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1E625BB022B40C85998B2B /* Pods-Cparadise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cparadise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise.debug.xcconfig"; sourceTree = "<group>"; };
 		86E345151D36AAA2002D6EBC /* Cparadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cparadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E345191D36AAA2002D6EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86E3451B1D36AAA2002D6EBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		86E345391D36AAA2002D6EBC /* CparadiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CparadiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E3453D1D36AAA2002D6EBC /* CparadiseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CparadiseUITests.m; sourceTree = "<group>"; };
 		86E3453F1D36AAA2002D6EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C5ED33332E1852B04DD939 /* Pods-Cparadise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cparadise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7300C6D910BA0622A41D3E2E /* libPods-Cparadise.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D06169FC7F6DDA903D11884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E1E625BB022B40C85998B2B /* Pods-Cparadise.debug.xcconfig */,
+				B1C5ED33332E1852B04DD939 /* Pods-Cparadise.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72DE2D1A6DF23ABB19084D6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55A7A6F075D0D593E9A36A19 /* libPods-Cparadise.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86E3450C1D36AAA2002D6EBC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				86E345311D36AAA2002D6EBC /* CparadiseTests */,
 				86E3453C1D36AAA2002D6EBC /* CparadiseUITests */,
 				86E345161D36AAA2002D6EBC /* Products */,
+				5D06169FC7F6DDA903D11884 /* Pods */,
+				72DE2D1A6DF23ABB19084D6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86E345421D36AAA2002D6EBC /* Build configuration list for PBXNativeTarget "Cparadise" */;
 			buildPhases = (
+				02DBA8BA5367B0BF32F86910 /* 📦 Check Pods Manifest.lock */,
 				86E345111D36AAA2002D6EBC /* Sources */,
 				86E345121D36AAA2002D6EBC /* Frameworks */,
 				86E345131D36AAA2002D6EBC /* Resources */,
+				4F1D4BF07FDB9543B57323D1 /* 📦 Embed Pods Frameworks */,
+				855DF57F1CF66B17E9D5C6DF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02DBA8BA5367B0BF32F86910 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F1D4BF07FDB9543B57323D1 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		855DF57F1CF66B17E9D5C6DF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86E345111D36AAA2002D6EBC /* Sources */ = {
@@ -416,6 +491,7 @@
 		};
 		86E345431D36AAA2002D6EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1E625BB022B40C85998B2B /* Pods-Cparadise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cparadise/Info.plist;
@@ -427,6 +503,7 @@
 		};
 		86E345441D36AAA2002D6EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1C5ED33332E1852B04DD939 /* Pods-Cparadise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cparadise/Info.plist;
@@ -501,6 +578,7 @@
 				86E345441D36AAA2002D6EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86E345451D36AAA2002D6EBC /* Build configuration list for PBXNativeTarget "CparadiseTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +587,7 @@
 				86E345471D36AAA2002D6EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86E345481D36AAA2002D6EBC /* Build configuration list for PBXNativeTarget "CparadiseUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +596,7 @@
 				86E3454A1D36AAA2002D6EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
