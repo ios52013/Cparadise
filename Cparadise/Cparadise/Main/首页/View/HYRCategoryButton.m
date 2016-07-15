@@ -76,14 +76,29 @@
 }
 
 
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+//点击开始
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    self.backgroundColor = [UIColor colorWithRed:0.90f green:0.90f blue:0.90f alpha:1.00f];
 }
-*/
+
+//点击结束
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch * touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self];
+    
+    //判断某个矩形范围 是否包含着某点
+    //也就是判断点中的是哪一个View
+    if (CGRectContainsPoint(self.bounds, point)) {
+        
+        //如果是点中了我，那我就把该分类的标签 返回出去到控制器
+#pragma mark - 反向传值的问题
+        //怎么返回出去？  通知？委托？block？ 都可以
+        
+        //这个block属性 会在控制器内创建标签的时候 实现
+        self.clickAction(_category);
+    }
+    
+    self.backgroundColor = [UIColor colorWithRed:0.99f green:0.99f blue:0.99f alpha:1.00f];
+}
 
 @end

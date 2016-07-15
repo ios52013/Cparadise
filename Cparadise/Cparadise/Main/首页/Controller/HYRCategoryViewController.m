@@ -15,6 +15,11 @@
 #define kHeight [UIScreen mainScreen].bounds.size.height
 #define kGap 10
 
+//Xcode8 beta版本中 NSLog 不能再控制台输出信息了
+
+#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+
+
 @interface HYRCategoryViewController ()
 //声明属性
 @property (strong,nonatomic) NSMutableArray * categories;
@@ -76,6 +81,17 @@
         //每次创建好一个分类标签的按钮 就添加到数组中
         [_buttons addObject:button];
 
+        //实现标签类里面的block属性 以便传参
+        button.clickAction = ^(id obj){
+        
+            HYRCategory *category = obj;
+            
+            if (obj) {
+                NSLog(@"点击某个标签后block能够传参数回来吗？%@",category.categoryName);
+            }
+            
+        };
+        
         [self.view addSubview:button];
     }
     
