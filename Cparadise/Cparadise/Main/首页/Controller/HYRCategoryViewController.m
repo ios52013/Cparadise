@@ -34,6 +34,9 @@
     
     //创建界面
     [self createUI];
+    
+    //发起网络请求
+    [self sendRequest];
 }
 
 //初始化数据
@@ -84,15 +87,23 @@
     [HYRHttpTool fetchCategoryInfoSuccess:^(id obj) {
         //返回的obj里面 是请求回来所有 标签 的字典
         _categories = obj;
-        //
+        
+        //给每一个标签按钮赋值
         for (int i = 0; i<_categories.count; i++) {
+            //拿到每一个分类标签按钮
             HYRCategoryButton *button = _buttons[i];
+            //给每一个分类标签按钮 赋值一个标签
+            button.category = _categories[i];
             
+            //分类标签的图片名字也应该在这里赋值的,奈何后台没有数据
+            //button.img = _images[i];
         }
         
         
     } andFailure:^(id obj) {
-        //
+        
+        NSLog(@"请求失败的原因是:%@",obj);
+        
     }];
 }
 

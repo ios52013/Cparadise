@@ -62,11 +62,20 @@
 }
 
 
-//设置
+//设置图片属性img的 setter方法
 -(void)setImg:(NSString *)img{
     _img = img;
     self.customImageView.image = [UIImage imageNamed:img];
 }
+
+//设置 分类标签 的 setter方法
+-(void)setCategory:(HYRCategory *)category{
+    _category = category;
+    //分类标签的类型名字
+    self.customLabel.text = category.categoryName;
+}
+
+
 
 
 /*

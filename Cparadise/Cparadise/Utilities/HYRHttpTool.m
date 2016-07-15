@@ -11,7 +11,13 @@
 //宏定义
 #define kTimeOutInterval 10.0
 #define kAppKey @"36c07a3919296c41e4feef2f51c317ba"
-#define kHostUrl @"http://apis.juhe.cn/cook/category"
+#define kHostUrl @"http://apis.juhe.cn/cook/category?"
+
+
+//Xcode8 beta版本中 NSLog 不能再控制台输出信息了
+
+#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+
 
 @implementation HYRHttpTool
 
@@ -47,6 +53,7 @@
     // get请求也可以直接将参数放在字典里，AFN会自己将参数拼接在url的后面，不需要自己拼接
     NSDictionary *param = @{@"key":kAppKey};
     
+    //NSString *url = [NSString stringWithFormat:@"%@?key=%@",kHostUrl,kAppKey];
     //创建请求对象
     AFHTTPSessionManager *manager = [self manager];
     //发起GET请求
@@ -60,8 +67,19 @@
         if (responseObject) {
             //把请求回来的json字符串转换成字典
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+            
+            
+            NSLog(@"============%@",dict);
+            
+            NSArray *resArr = dict[@"result"];
+            
+            NSLog(@"+++++++++%@",resArr);
+            
+            NSArray *list = resArr[0];
+            
+            NSLog(@"**********%@",list);
             //把转成功的字典 返回出去
-            success(dict);
+            success(resArr);
             
         }else{
             success(@{@"msg": @"暂无数据~"});
@@ -69,8 +87,8 @@
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //请求失败
-        
-        failure(error);//把请求错误的信息返回出去
+        NSString *reson = [error localizedDescription];
+        failure(reson);//把请求错误的信息返回出去
     }];
     
     
