@@ -98,6 +98,7 @@
         self.clickAction(_category);
     }
     
+    
     self.backgroundColor = [UIColor colorWithRed:0.99f green:0.99f blue:0.99f alpha:1.00f];
 }
 

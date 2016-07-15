@@ -16,7 +16,6 @@ typedef void (^ClickAction)(id obj);
 
 
 @interface HYRCategoryButton : UIView
-
 //标签
 @property(nonatomic,strong)HYRCategory *category;
 //图片的名称

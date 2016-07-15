@@ -91,6 +91,7 @@
                 NSLog(@"点击某个标签后block能够传参数回来吗？%@",category.categoryName);
             }
             
+            
         };
         
         [self.view addSubview:button];
