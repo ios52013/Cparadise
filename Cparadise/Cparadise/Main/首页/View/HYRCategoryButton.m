@@ -46,7 +46,7 @@
     //创建一个图片对象 用来显示菜分类的图片
     UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, imageWidth, imageWidth)];
     imageView.center = CGPointMake(self.width/2, 8 + imageWidth/2);
-    imageView.backgroundColor = [UIColor redColor];
+    //imageView.backgroundColor = [UIColor redColor];
     //打开图片的用户交互功能
     imageView.userInteractionEnabled = YES;
     [self addSubview:imageView];
@@ -54,7 +54,7 @@
     
     //创建一个label 用来显示菜的分类名字
     UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0, imageView.y+imageView.height + 8, self.width, 20)];
-    label.backgroundColor = [UIColor cyanColor];
+    //label.backgroundColor = [UIColor cyanColor];
     //设置label的字体对齐方式  居中
     label.textAlignment = NSTextAlignmentCenter;
     [self addSubview:label];
