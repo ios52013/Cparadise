@@ -10,6 +10,7 @@
 		7300C6D910BA0622A41D3E2E /* libPods-Cparadise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A7A6F075D0D593E9A36A19 /* libPods-Cparadise.a */; };
 		8614F3BB1D39431300C7478C /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614F3BA1D39431300C7478C /* UIView+Category.m */; };
 		8614F3BE1D394B0000C7478C /* HYRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614F3BD1D394B0000C7478C /* HYRCategory.m */; };
+		8614F3C11D394E0200C7478C /* HYRHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8614F3C01D394E0200C7478C /* HYRHttpTool.m */; };
 		86E3451A1D36AAA2002D6EBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345191D36AAA2002D6EBC /* main.m */; };
 		86E345231D36AAA2002D6EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E345211D36AAA2002D6EBC /* Main.storyboard */; };
 		86E345251D36AAA2002D6EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E345241D36AAA2002D6EBC /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 		8614F3BA1D39431300C7478C /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		8614F3BC1D394B0000C7478C /* HYRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRCategory.h; sourceTree = "<group>"; };
 		8614F3BD1D394B0000C7478C /* HYRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRCategory.m; sourceTree = "<group>"; };
+		8614F3BF1D394E0200C7478C /* HYRHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRHttpTool.h; sourceTree = "<group>"; };
+		8614F3C01D394E0200C7478C /* HYRHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRHttpTool.m; sourceTree = "<group>"; };
 		86E345151D36AAA2002D6EBC /* Cparadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cparadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E345191D36AAA2002D6EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86E345221D36AAA2002D6EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 		86E345501D36B14C002D6EBC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8614F3BF1D394E0200C7478C /* HYRHttpTool.h */,
+				8614F3C01D394E0200C7478C /* HYRHttpTool.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86E345561D36B18A002D6EBC /* AppDelegate.m in Sources */,
+				8614F3C11D394E0200C7478C /* HYRHttpTool.m in Sources */,
 				86E345761D36C3A8002D6EBC /* HYRCategoryButton.m in Sources */,
 				86E345701D36BA68002D6EBC /* HYRRootViewController.m in Sources */,
 				8614F3BE1D394B0000C7478C /* HYRCategory.m in Sources */,

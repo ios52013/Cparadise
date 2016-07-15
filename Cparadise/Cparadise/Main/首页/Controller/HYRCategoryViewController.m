@@ -8,6 +8,8 @@
 
 #import "HYRCategoryViewController.h"
 #import "HYRCategoryButton.h"
+#import "HYRHttpTool.h"
+
 
 #define kWidth [UIScreen mainScreen].bounds.size.width
 #define kHeight [UIScreen mainScreen].bounds.size.height
@@ -63,14 +65,37 @@
     
 #pragma 九宫格的样式
     for (int i = 0; i < 9; i++) {
-        //自定义分类的按钮
+        //自定义分类标签的按钮
        HYRCategoryButton * button = [[HYRCategoryButton alloc]initWithFrame:CGRectMake(30 + i%3 *(buttonWidth + kGap), 100 + i/3 * (buttonWidth + kGap), buttonWidth, buttonWidth)];
+        //这是标签的图片 应该放到网络请求标签里面去  但是后台实际上没有返回这个字段，所以只能在这里实现了
+        button.img = _images[i];
+        
+        //每次创建好一个分类标签的按钮 就添加到数组中
         [_buttons addObject:button];
 
         [self.view addSubview:button];
     }
     
 }
+
+
+//发送网络请求-获取分类标签的信息
+-(void)sendRequest{
+    [HYRHttpTool fetchCategoryInfoSuccess:^(id obj) {
+        //返回的obj里面 是请求回来所有 标签 的字典
+        _categories = obj;
+        //
+        for (int i = 0; i<_categories.count; i++) {
+            HYRCategoryButton *button = _buttons[i];
+            
+        }
+        
+        
+    } andFailure:^(id obj) {
+        //
+    }];
+}
+
 
 
 
