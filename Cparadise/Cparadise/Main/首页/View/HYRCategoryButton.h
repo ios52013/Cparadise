@@ -24,4 +24,5 @@ typedef void (^ClickAction)(id obj);
 //
 @property (nonatomic,strong)ClickAction clickAction;
 
+
 @end

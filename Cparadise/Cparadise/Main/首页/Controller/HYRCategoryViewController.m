@@ -81,6 +81,7 @@
         //每次创建好一个分类标签的按钮 就添加到数组中
         [_buttons addObject:button];
 
+        
         //实现标签类里面的block属性 以便传参
         button.clickAction = ^(id obj){
         
