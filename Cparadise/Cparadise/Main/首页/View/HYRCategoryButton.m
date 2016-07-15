@@ -61,6 +61,14 @@
     self.customLabel = label;
 }
 
+
+//设置
+-(void)setImg:(NSString *)img{
+    _img = img;
+    self.customImageView.image = [UIImage imageNamed:img];
+}
+
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
