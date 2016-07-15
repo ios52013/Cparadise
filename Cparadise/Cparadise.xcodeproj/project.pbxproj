@@ -21,6 +21,8 @@
 		86E345601D36B1D6002D6EBC /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86E3455B1D36B1D6002D6EBC /* 4.jpg */; };
 		86E345611D36B1D6002D6EBC /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86E3455C1D36B1D6002D6EBC /* 5.jpg */; };
 		86E345701D36BA68002D6EBC /* HYRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E3456F1D36BA68002D6EBC /* HYRRootViewController.m */; };
+		86E345731D36BCD8002D6EBC /* HYRCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345721D36BCD8002D6EBC /* HYRCategoryViewController.m */; };
+		86E345761D36C3A8002D6EBC /* HYRCategoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345751D36C3A8002D6EBC /* HYRCategoryButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		86E3455C1D36B1D6002D6EBC /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		86E3456E1D36BA68002D6EBC /* HYRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRRootViewController.h; sourceTree = "<group>"; };
 		86E3456F1D36BA68002D6EBC /* HYRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRRootViewController.m; sourceTree = "<group>"; };
+		86E345711D36BCD8002D6EBC /* HYRCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRCategoryViewController.h; sourceTree = "<group>"; };
+		86E345721D36BCD8002D6EBC /* HYRCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRCategoryViewController.m; sourceTree = "<group>"; };
+		86E345741D36C3A8002D6EBC /* HYRCategoryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRCategoryButton.h; sourceTree = "<group>"; };
+		86E345751D36C3A8002D6EBC /* HYRCategoryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRCategoryButton.m; sourceTree = "<group>"; };
 		B1C5ED33332E1852B04DD939 /* Pods-Cparadise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cparadise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,6 +274,8 @@
 		86E345651D36B5AA002D6EBC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				86E345741D36C3A8002D6EBC /* HYRCategoryButton.h */,
+				86E345751D36C3A8002D6EBC /* HYRCategoryButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +290,8 @@
 		86E345671D36B5BF002D6EBC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				86E345711D36BCD8002D6EBC /* HYRCategoryViewController.h */,
+				86E345721D36BCD8002D6EBC /* HYRCategoryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -497,7 +507,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86E345561D36B18A002D6EBC /* AppDelegate.m in Sources */,
+				86E345761D36C3A8002D6EBC /* HYRCategoryButton.m in Sources */,
 				86E345701D36BA68002D6EBC /* HYRRootViewController.m in Sources */,
+				86E345731D36BCD8002D6EBC /* HYRCategoryViewController.m in Sources */,
 				86E3451A1D36AAA2002D6EBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

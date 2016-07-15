@@ -27,7 +27,7 @@
         <!--首页-->
         <scene sceneID="G0X-rN-Kkh">
             <objects>
-                <viewController id="svH-Xz-sZ5" sceneMemberID="viewController">
+                <viewController id="svH-Xz-sZ5" customClass="HYRCategoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Aop-df-p29"/>
                         <viewControllerLayoutGuide type="bottom" id="5VT-NE-f96"/>
