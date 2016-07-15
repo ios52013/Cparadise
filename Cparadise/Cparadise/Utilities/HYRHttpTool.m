@@ -7,6 +7,7 @@
 //
 
 #import "HYRHttpTool.h"
+#import "HYRParse.h"
 
 //宏定义
 #define kTimeOutInterval 10.0
@@ -68,18 +69,10 @@
             //把请求回来的json字符串转换成字典
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
             
-            
-            NSLog(@"============%@",dict);
-            
-            NSArray *resArr = dict[@"result"];
-            
-            NSLog(@"+++++++++%@",resArr);
-            
-            NSArray *list = resArr[0];
-            
-            NSLog(@"**********%@",list);
+            //调用解析类来解析数据模型
+            NSMutableArray *resultArr = [HYRParse parseCategoryInfoWithDic:dict];
             //把转成功的字典 返回出去
-            success(resArr);
+            success(resultArr);
             
         }else{
             success(@{@"msg": @"暂无数据~"});
