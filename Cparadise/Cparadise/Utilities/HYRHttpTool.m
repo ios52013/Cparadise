@@ -9,15 +9,6 @@
 #import "HYRHttpTool.h"
 #import "HYRParse.h"
 
-//宏定义
-#define kTimeOutInterval 10.0
-#define kAppKey @"36c07a3919296c41e4feef2f51c317ba"
-#define kHostUrl @"http://apis.juhe.cn/cook/category?"
-
-
-//Xcode8 beta版本中 NSLog 不能再控制台输出信息了
-
-#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
 
 
 @implementation HYRHttpTool

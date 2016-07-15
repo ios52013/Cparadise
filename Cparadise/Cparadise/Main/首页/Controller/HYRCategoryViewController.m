@@ -11,14 +11,6 @@
 #import "HYRHttpTool.h"
 
 
-#define kWidth [UIScreen mainScreen].bounds.size.width
-#define kHeight [UIScreen mainScreen].bounds.size.height
-#define kGap 10
-
-//Xcode8 beta版本中 NSLog 不能再控制台输出信息了
-
-#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
-
 
 @interface HYRCategoryViewController ()
 //声明属性

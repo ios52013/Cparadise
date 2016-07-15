@@ -57,6 +57,7 @@
 		8614F3C01D394E0200C7478C /* HYRHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRHttpTool.m; sourceTree = "<group>"; };
 		86749A871D3972E200EFE1B8 /* HYRParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRParse.h; sourceTree = "<group>"; };
 		86749A881D3972E200EFE1B8 /* HYRParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRParse.m; sourceTree = "<group>"; };
+		86749A8A1D39836100EFE1B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		86E345151D36AAA2002D6EBC /* Cparadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cparadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E345191D36AAA2002D6EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86E345221D36AAA2002D6EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -195,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				86E345291D36AAA2002D6EBC /* Info.plist */,
+				86749A8A1D39836100EFE1B8 /* PrefixHeader.pch */,
 				86E345261D36AAA2002D6EBC /* LaunchScreen.storyboard */,
 				86E345241D36AAA2002D6EBC /* Assets.xcassets */,
 				86E345521D36B18A002D6EBC /* AppDelegate.h */,
@@ -680,6 +682,8 @@
 			baseConfigurationReference = 6E1E625BB022B40C85998B2B /* Pods-Cparadise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/hyrloveqi/Desktop/Cpara/Cparadise/Cparadise/Cparadise/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = Cparadise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.successful.Cparadise;
@@ -692,6 +696,8 @@
 			baseConfigurationReference = B1C5ED33332E1852B04DD939 /* Pods-Cparadise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/hyrloveqi/Desktop/Cpara/Cparadise/Cparadise/Cparadise/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = Cparadise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.successful.Cparadise;
