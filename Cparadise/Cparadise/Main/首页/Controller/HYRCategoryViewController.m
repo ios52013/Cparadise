@@ -9,7 +9,7 @@
 #import "HYRCategoryViewController.h"
 #import "HYRCategoryButton.h"
 #import "HYRHttpTool.h"
-
+#import "HYRMenusViewController.h"
 
 
 @interface HYRCategoryViewController ()
@@ -131,10 +131,13 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+// 通过segue跳转界面 都需要来这里传参
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    //
+    HYRMenusViewController *menusVC = [segue destinationViewController];
+    menusVC.category = sender;
+    
+    //
 }
 
 

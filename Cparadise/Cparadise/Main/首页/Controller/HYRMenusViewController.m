@@ -26,7 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //
+    [self createUI];
+    [self initData];
 }
 
 
@@ -49,13 +51,30 @@
     
     self.title = self.category.categoryName;
     
-    
-    
-    
     //注册列表的cell
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
 }
+
+#pragma -mark tableView 代理方法
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return _menus.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    HYRMenu *menu = _menus[indexPath.row];
+    
+    cell.textLabel.text = menu.title;
+    
+    return cell;
+}
+
+
+
+
 
 
 
