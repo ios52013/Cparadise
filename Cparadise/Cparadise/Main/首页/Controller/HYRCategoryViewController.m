@@ -42,7 +42,7 @@
     _buttons = [NSMutableArray array];
     _images = @[@"caishi",@"time",@"tiandian",@"changjianshicai",@"zhushi",@"jiankang",@"changjing",@"fangshi",@"renqun"];
 #pragma something to do
-    //_plistUtilities = [WYHPlistUtilities sharePlisthUtilities];
+    //
 }
 
 //创建界面
@@ -81,6 +81,8 @@
             
             if (obj) {
                 NSLog(@"点击某个标签后block能够传参数回来吗？%@",category.categoryName);
+                //根据故事版里面segue的标识符来跳转界面 并传参
+                [self performSegueWithIdentifier:@"index" sender:obj];
             }
             
             
@@ -126,7 +128,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -134,6 +136,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

@@ -18,6 +18,10 @@
     NSLog(@"解析的时候%@",dic[@"result"]);
     NSArray * tempArray = dic[@"result"];
     
+    if ([tempArray isKindOfClass:[NSNull class]]) {
+        return nil;
+    }
+    
     NSDictionary *resDict = tempArray[0];
     
     NSArray *resArr = resDict[@"list"];
