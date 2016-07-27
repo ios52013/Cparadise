@@ -7,11 +7,14 @@
 //
 
 #import "HYRMenusViewController.h"
+#import "HYRMenu.h"
+
 
 @interface HYRMenusViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
-
+//请求回来的每一道菜
+@property (strong, nonatomic) NSMutableArray * menus;
 
 @end
 
@@ -42,7 +45,17 @@
 }
 
 
-
+-(void)initData{
+    
+    self.title = self.category.categoryName;
+    
+    
+    
+    
+    //注册列表的cell
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
+}
 
 
 
