@@ -86,6 +86,8 @@
 +(void)fetchMenusWithCategoryID:(NSString *)categoryID andPn:(NSInteger)pn andSeccess:(MyCallBack)success andFailure:(MyCallBack)failure{
     
 #warning something todo
+    
+    
     NSString *urlString = [NSString stringWithFormat:@"%@key=%@&cid=%@&pn=%ld&rn=30",kServerAddress,kAppKey,categoryID,(long)pn];
     
     //
@@ -97,8 +99,24 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         
-        //把请求成功返回的数据  返回出去
-        success(responseObject);
+        
+        //请求成功
+        
+        if (responseObject) {
+            //把请求回来的json字符串转换成字典
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+            
+            //调用解析类来解析数据模型
+            NSMutableArray *resultArr = [HYRParse parseMenusWithDic:dict];
+            //把转成功的字典 返回出去
+            success(resultArr);
+            
+        }else{
+            success(@{@"msg": @"暂无数据~"});
+        }
+        
+        
+        
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //

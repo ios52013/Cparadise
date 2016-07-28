@@ -11,8 +11,9 @@
 #import <Foundation/Foundation.h>
 
 @interface HYRParse : NSObject
-//
+//解析标签
 +(NSMutableArray*)parseCategoryInfoWithDic:(NSDictionary *)dic;
-
+//解析菜谱
++(NSMutableArray*)parseMenusWithDic:(NSDictionary *)dic;
 
 @end
