@@ -24,6 +24,9 @@ typedef void(^MyCallBack)(id obj);
 //获取分类标签信息
 +(void)fetchCategoryInfoSuccess:(MyCallBack) success andFailure:(MyCallBack) failure;
 
+//按标签检索菜谱
++(void)fetchMenusWithCategoryID:(NSString *)categoryID andPn:(NSInteger)pn andSeccess:(MyCallBack)success andFailure:(MyCallBack)failure;
+
 
 
 @end

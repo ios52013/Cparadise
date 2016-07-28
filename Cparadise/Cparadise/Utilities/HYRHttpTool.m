@@ -80,6 +80,40 @@
 }
 
 
+//按标签检索菜谱
+//http://apis.juhe.cn/cook/index?key=您申请的KEY&cid=1
+
++(void)fetchMenusWithCategoryID:(NSString *)categoryID andPn:(NSInteger)pn andSeccess:(MyCallBack)success andFailure:(MyCallBack)failure{
+    
+#warning something todo
+    NSString *urlString = [NSString stringWithFormat:@"%@key=%@&cid=%@&pn=%ld&rn=30",kServerAddress,kAppKey,categoryID,(long)pn];
+    
+    //
+    AFHTTPSessionManager *manager = [self manager];
+    
+    [manager POST:urlString parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+        //上传的时候
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        
+        //把请求成功返回的数据  返回出去
+        success(responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //
+    
+        NSLog(@"按标签检索菜谱请求失败 %@",[error localizedDescription]);
+    }];
+    
+    
+    
+    
+}
+
+
+
+
 
 //公共调用AF的方法
 +(void)requestDataWithUrl:(NSString * )url andSuccess:(MyCallBack)success andFailure:(MyCallBack)failure{

@@ -8,6 +8,7 @@
 
 #import "HYRMenusViewController.h"
 #import "HYRMenu.h"
+#import "HYRHttpTool.h"
 
 
 @interface HYRMenusViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -15,7 +16,12 @@
 @property (strong, nonatomic) UITableView *tableView;
 //请求回来的每一道菜
 @property (strong, nonatomic) NSMutableArray * menus;
-
+/*
+ pn		数据返回起始下标，默认0
+ rn	    数据返回条数，最大30，默认10
+ */
+@property (nonatomic,assign) NSInteger rn;
+@property (nonatomic,assign)NSInteger pn;
 @end
 
 
@@ -29,6 +35,7 @@
     //
     [self createUI];
     [self initData];
+    [self sendRequest];
 }
 
 
@@ -48,13 +55,45 @@
 
 
 -(void)initData{
+    //初始化数组 准备接收请求得到的所有菜
+    _menus = [NSMutableArray array];
     
+    //系列菜的系列名字
     self.title = self.category.categoryName;
     
+    
+    _pn = 0;
+    _rn = 30;
+
     //注册列表的cell
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
 }
+
+//根据传过来的标签 发起请求菜谱
+
+-(void)sendRequest{
+    [HYRHttpTool fetchMenusWithCategoryID:_category.categoryId andPn:_pn andSeccess:^(id obj) {
+        //请求成功
+        if (_pn == 0) {//如果是第0次  数据返回起始下标
+            _menus = obj;
+        }
+        
+        //刷新表格
+        [_tableView reloadData];
+        
+    } andFailure:^(id obj) {
+        //按标签检索菜谱 请求失败
+        
+    }];
+    
+    
+}
+
+
+
+
+
 
 #pragma -mark tableView 代理方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

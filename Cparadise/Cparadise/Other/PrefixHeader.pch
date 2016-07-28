@@ -16,7 +16,7 @@
 #define kTimeOutInterval 10.0
 #define kAppKey @"36c07a3919296c41e4feef2f51c317ba"
 #define kHostUrl @"http://apis.juhe.cn/cook/category?"
-
+#define kServerAddress @"http://apis.juhe.cn/cook/index?"
 
 #define kWidth [UIScreen mainScreen].bounds.size.width
 #define kHeight [UIScreen mainScreen].bounds.size.height
