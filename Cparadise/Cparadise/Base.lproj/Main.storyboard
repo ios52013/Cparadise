@@ -88,7 +88,7 @@
         <!--我的-->
         <scene sceneID="GfY-y9-Wpu">
             <objects>
-                <viewController id="6oo-SQ-Am4" sceneMemberID="viewController">
+                <viewController id="6oo-SQ-Am4" customClass="HYRMyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fsD-SY-noo"/>
                         <viewControllerLayoutGuide type="bottom" id="J5O-PU-jBU"/>
