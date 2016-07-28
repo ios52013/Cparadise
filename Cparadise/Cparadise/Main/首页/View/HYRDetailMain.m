@@ -9,10 +9,15 @@
 #import "HYRDetailMain.h"
 #import "HYRHeaderImageView.h"
 #import "UIView+Category.h"
-
+#import "HYRDetailSubView.h"
 
 @interface HYRDetailMain ()
 @property (nonatomic,strong) HYRHeaderImageView * mainImageView;
+//
+@property (nonatomic,strong) HYRDetailSubView * ingredientsView;
+@property (nonatomic,strong) HYRDetailSubView * burdenView;
+@property (nonatomic,strong) HYRDetailSubView * stepsView;
+
 
 @end
 
@@ -37,8 +42,22 @@
     [self addSubview:mainImageView];
     self.mainImageView = mainImageView;
     
-   
+    HYRDetailSubView * ingredientsView = [[HYRDetailSubView alloc]initWithFrame:CGRectMake(kGap, 0, self.width - 2*kGap, 0)];
+    ingredientsView.type = 1;
+    _ingredientsView = ingredientsView;
+    [self addSubview:ingredientsView];
+    
+    HYRDetailSubView * burdenView = [[HYRDetailSubView alloc]initWithFrame:CGRectMake(kGap, 0, self.width - 2*kGap, 0)];
+    burdenView.type = 2;
+    _burdenView = burdenView;
+    [self addSubview:burdenView];
+    
+    HYRDetailSubView * stepsView = [[HYRDetailSubView alloc]initWithFrame:CGRectMake(kGap, 0, self.width - 2*kGap, 100)];
+    stepsView.type = 3;
+    _stepsView = stepsView;
+    [self addSubview:stepsView];
 }
+
 
 //setter
 -(void)setMenu:(HYRMenu *)menu{
@@ -46,6 +65,16 @@
     _mainImageView.img = _menu.albums[0];
     _mainImageView.text = _menu.imtro;
     
+    _ingredientsView.text = _menu.ingredients;
+    _ingredientsView.y =  _mainImageView.y + _mainImageView.height + kGap;
+    
+    _burdenView.text = _menu.burden;
+    _burdenView.y = _ingredientsView.y + _ingredientsView.height + kGap;
+    
+    _stepsView.steps = _menu.steps;
+    _stepsView.y = _burdenView.y + _burdenView.height + kGap;
+    
+    self.height = _stepsView.y + _stepsView.height + kGap;
       
 }
 
