@@ -64,6 +64,14 @@
                  };
     }];
     
+    //模型层 其中有个步骤的数组属性 step 相对应 后台返回的是另外一个 对象（模型）
+    [HYRMenu mj_setupObjectClassInArray:^NSDictionary *{
+        return @{
+                 @"steps" : @"HYRStep"
+                 };
+    }];
+    
+    
     //字典数组 转 模型数组
     array = [HYRMenu mj_objectArrayWithKeyValuesArray:tempArray];
     

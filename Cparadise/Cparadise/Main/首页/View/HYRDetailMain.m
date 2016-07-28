@@ -13,9 +13,11 @@
 
 @interface HYRDetailMain ()
 @property (nonatomic,strong) HYRHeaderImageView * mainImageView;
-//
+//食材的子视图
 @property (nonatomic,strong) HYRDetailSubView * ingredientsView;
+//调料的子视图
 @property (nonatomic,strong) HYRDetailSubView * burdenView;
+//做法步骤的子视图
 @property (nonatomic,strong) HYRDetailSubView * stepsView;
 
 
@@ -38,20 +40,25 @@
 
 //设置界面
 -(void)setupUI{
+    //头视图的子视图
     HYRHeaderImageView * mainImageView = [[HYRHeaderImageView alloc]initWithFrame:CGRectMake(kGap, kGap, self.width - 2*kGap, 150)];
     [self addSubview:mainImageView];
     self.mainImageView = mainImageView;
     
+    //食材的子视图
     HYRDetailSubView * ingredientsView = [[HYRDetailSubView alloc]initWithFrame:CGRectMake(kGap, 0, self.width - 2*kGap, 0)];
     ingredientsView.type = 1;
     _ingredientsView = ingredientsView;
     [self addSubview:ingredientsView];
     
+    //调料的子视图
     HYRDetailSubView * burdenView = [[HYRDetailSubView alloc]initWithFrame:CGRectMake(kGap, 0, self.width - 2*kGap, 0)];
     burdenView.type = 2;
     _burdenView = burdenView;
     [self addSubview:burdenView];
     
+    
+    //做法步骤的子视图
     HYRDetailSubView * stepsView = [[HYRDetailSubView alloc]initWithFrame:CGRectMake(kGap, 0, self.width - 2*kGap, 100)];
     stepsView.type = 3;
     _stepsView = stepsView;

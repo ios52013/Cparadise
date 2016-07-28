@@ -8,8 +8,10 @@
 
 #import "HYRDetailSubView.h"
 #import "UIView+Category.h"
+#import "HYRStepCell.h"
+#import "HYRStep.h"
 
-@interface HYRDetailSubView ()
+@interface HYRDetailSubView ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong)UILabel * headerL;
 @property (nonatomic,strong)UIView * detailView;
@@ -82,6 +84,61 @@
     }
 }
 
+
+//显示步骤
+-(void)setSteps:(NSArray *)steps{
+    _steps = steps;
+    CGFloat allHeight = 0;
+   //遍历所有的步骤 
+    for (HYRStep * step in steps) {
+        CGFloat height = [HYRStepCell getCellHeightWithStep:step.step];
+        if (height > 85) {
+            allHeight += (height + 10);
+        }
+        else{
+            allHeight += 95;
+        }
+    }
+    //
+    UITableView * tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.width, allHeight) style:UITableViewStylePlain];
+    tableView.dataSource = self;
+    tableView.delegate = self;
+    tableView.scrollEnabled = NO;
+    //    tableView.userInteractionEnabled = NO;
+    [_detailView addSubview:tableView];
+    _detailView.height = tableView.height;
+    self.height = _detailView.y + _detailView.height;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _steps.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    HYRStepCell * cell = [tableView dequeueReusableCellWithIdentifier:@"step"];
+    if (!cell) {
+        cell = [[HYRStepCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"step"];
+    }
+    
+    cell.step = _steps[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.num = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    return cell;
+}
+
+//行高
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    HYRStep *step = _steps[indexPath.row];
+    CGFloat height = [HYRStepCell getCellHeightWithStep:step.step];
+    //
+    if (height > 85) {
+        return (height + 10);
+    }
+    else{
+        return 95;
+    }
+}
 
 
 

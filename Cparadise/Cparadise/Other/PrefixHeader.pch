@@ -26,6 +26,9 @@
 #define DETAILFONT [UIFont systemFontOfSize:14]
 
 
+#define LWIDTH (kWidth - 16 -135 - 25)
+#define StepImageClickNotification @"StepImageClickNotification"
+
 
 
 //Xcode8 beta版本中 NSLog 不能再控制台输出信息了
