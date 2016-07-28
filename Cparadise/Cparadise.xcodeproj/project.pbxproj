@@ -18,6 +18,7 @@
 		868AF3F51D4A6FC30059B286 /* HYRStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 868AF3F41D4A6FC30059B286 /* HYRStep.m */; };
 		868AF3F81D4A70050059B286 /* HYRStepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 868AF3F71D4A70050059B286 /* HYRStepCell.m */; };
 		868AF3FB1D4A81210059B286 /* HYRMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 868AF3FA1D4A81210059B286 /* HYRMyViewController.m */; };
+		868AF3FE1D4A855D0059B286 /* HYRMyArticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 868AF3FD1D4A855D0059B286 /* HYRMyArticalViewController.m */; };
 		86E3451A1D36AAA2002D6EBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345191D36AAA2002D6EBC /* main.m */; };
 		86E345231D36AAA2002D6EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E345211D36AAA2002D6EBC /* Main.storyboard */; };
 		86E345251D36AAA2002D6EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E345241D36AAA2002D6EBC /* Assets.xcassets */; };
@@ -82,6 +83,8 @@
 		868AF3F71D4A70050059B286 /* HYRStepCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRStepCell.m; sourceTree = "<group>"; };
 		868AF3F91D4A81210059B286 /* HYRMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRMyViewController.h; sourceTree = "<group>"; };
 		868AF3FA1D4A81210059B286 /* HYRMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRMyViewController.m; sourceTree = "<group>"; };
+		868AF3FC1D4A855D0059B286 /* HYRMyArticalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRMyArticalViewController.h; sourceTree = "<group>"; };
+		868AF3FD1D4A855D0059B286 /* HYRMyArticalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRMyArticalViewController.m; sourceTree = "<group>"; };
 		86E345151D36AAA2002D6EBC /* Cparadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cparadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E345191D36AAA2002D6EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86E345221D36AAA2002D6EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -393,6 +396,8 @@
 			children = (
 				868AF3F91D4A81210059B286 /* HYRMyViewController.h */,
 				868AF3FA1D4A81210059B286 /* HYRMyViewController.m */,
+				868AF3FC1D4A855D0059B286 /* HYRMyArticalViewController.h */,
+				868AF3FD1D4A855D0059B286 /* HYRMyArticalViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -596,6 +601,7 @@
 				868AF3F81D4A70050059B286 /* HYRStepCell.m in Sources */,
 				86FF02BF1D4A13B30090F12C /* HYRMenuCell.m in Sources */,
 				86E345701D36BA68002D6EBC /* HYRRootViewController.m in Sources */,
+				868AF3FE1D4A855D0059B286 /* HYRMyArticalViewController.m in Sources */,
 				86FF02CF1D4A2E650090F12C /* HYRHeaderImageView.m in Sources */,
 				8614F3BE1D394B0000C7478C /* HYRCategory.m in Sources */,
 				8678C2071D49284D00E00CF0 /* HYRMenusViewController.m in Sources */,

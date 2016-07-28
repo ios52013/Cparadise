@@ -80,12 +80,32 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.section == 0) {
-        
+        if (indexPath.row == 2) {
+            [self performSegueWithIdentifier:@"article" sender:nil];
+        }else{
+            //
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"相关功能码农正在熬夜拼命开发中..." preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+            
+            [alertController addAction:cancelAction];
+            [alertController addAction:okAction];
+            
+            [self presentViewController:alertController animated:YES completion:nil];
+        }
     }
     
     
     if (indexPath.section == 2) {
-       
+        //
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"相关功能码农正在熬夜拼命开发中..." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+        
+        [alertController addAction:cancelAction];
+        [alertController addAction:okAction];
+        
+        [self presentViewController:alertController animated:YES completion:nil];
     }
     
 }
