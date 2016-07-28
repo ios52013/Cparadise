@@ -108,7 +108,7 @@
         <scene sceneID="0IJ-25-UXi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SMZ-NF-4bs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="dqp-UE-Fun"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="footer_icon33" id="dqp-UE-Fun"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hvl-38-te1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -127,7 +127,7 @@
         <scene sceneID="NRL-Xj-NAz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QDT-Sr-K90" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" id="Xq3-Qg-is1"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="footer_icon11" id="Xq3-Qg-is1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T3g-sk-Wci">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -143,4 +143,8 @@
             <point key="canvasLocation" x="-607.20000000000005" y="-752.47376311844084"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="footer_icon11" width="25" height="25"/>
+        <image name="footer_icon33" width="25" height="25"/>
+    </resources>
 </document>

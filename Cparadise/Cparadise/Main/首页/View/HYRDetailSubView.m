@@ -99,7 +99,8 @@
             allHeight += 95;
         }
     }
-    //
+    
+    //创建列表 显示每一个步骤
     UITableView * tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.width, allHeight) style:UITableViewStylePlain];
     tableView.dataSource = self;
     tableView.delegate = self;
