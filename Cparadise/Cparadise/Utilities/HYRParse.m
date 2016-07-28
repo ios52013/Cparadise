@@ -14,6 +14,7 @@
 
 @implementation HYRParse
 
+//解析标签
 +(NSMutableArray*)parseCategoryInfoWithDic:(NSDictionary *)dic{
     NSMutableArray * array = [NSMutableArray array];
     NSLog(@"解析标签的时候%@",dic[@"result"]);

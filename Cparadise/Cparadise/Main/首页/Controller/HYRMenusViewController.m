@@ -9,7 +9,7 @@
 #import "HYRMenusViewController.h"
 #import "HYRMenu.h"
 #import "HYRHttpTool.h"
-
+#import "HYRMenuCell.h"
 
 @interface HYRMenusViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -47,7 +47,8 @@
     //设置列表的代理
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //每一行的分割线风格  无
+    //_tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     //把表格添加到当前视图当中
     [self.view addSubview:_tableView];
     
@@ -66,8 +67,8 @@
     _rn = 30;
 
     //注册列表的cell
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-    
+   // [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"HYRMenuCell" bundle:nil] forCellReuseIdentifier:@"menuCell"];
 }
 
 //根据传过来的标签 发起请求菜谱
@@ -96,23 +97,27 @@
 
 
 #pragma -mark tableView 代理方法
+//每一个分区有多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return _menus.count;
 }
-
+//每一行长什么样
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    HYRMenuCell * cell = [tableView dequeueReusableCellWithIdentifier:@"menuCell" forIndexPath:indexPath];
     
     HYRMenu *menu = _menus[indexPath.row];
     
-    cell.textLabel.text = menu.title;
+    cell.menu = menu;
     
     return cell;
 }
 
 
-
+//行高
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 80.0;
+}
 
 
 

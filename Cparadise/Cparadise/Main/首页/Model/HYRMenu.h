@@ -76,7 +76,7 @@
 @property (nonatomic,copy) NSString * imtro;//详细描述
 @property (nonatomic,copy) NSString * ingredients;//主材料
 @property (nonatomic,copy) NSString * burden;//配料
-@property (nonatomic,copy) NSString * albums;//相片
+@property (nonatomic,strong) NSArray * albums;//相片
 @property (nonatomic,strong) NSMutableArray * steps;//步骤
 
 @end

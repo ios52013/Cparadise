@@ -84,9 +84,7 @@
 //http://apis.juhe.cn/cook/index?key=您申请的KEY&cid=1
 
 +(void)fetchMenusWithCategoryID:(NSString *)categoryID andPn:(NSInteger)pn andSeccess:(MyCallBack)success andFailure:(MyCallBack)failure{
-    
-#warning something todo
-    
+   
     
     NSString *urlString = [NSString stringWithFormat:@"%@key=%@&cid=%@&pn=%ld&rn=30",kServerAddress,kAppKey,categoryID,(long)pn];
     
