@@ -31,6 +31,10 @@
 		86E345761D36C3A8002D6EBC /* HYRCategoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E345751D36C3A8002D6EBC /* HYRCategoryButton.m */; };
 		86FF02BF1D4A13B30090F12C /* HYRMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF02BD1D4A13B30090F12C /* HYRMenuCell.m */; };
 		86FF02C01D4A13B30090F12C /* HYRMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86FF02BE1D4A13B30090F12C /* HYRMenuCell.xib */; };
+		86FF02C31D4A246D0090F12C /* HYRMenuDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF02C21D4A246D0090F12C /* HYRMenuDetailVC.m */; };
+		86FF02C61D4A28DA0090F12C /* HYRDetailScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF02C51D4A28DA0090F12C /* HYRDetailScrollView.m */; };
+		86FF02C91D4A292D0090F12C /* HYRDetailMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF02C81D4A292D0090F12C /* HYRDetailMain.m */; };
+		86FF02CF1D4A2E650090F12C /* HYRHeaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FF02CE1D4A2E650090F12C /* HYRHeaderImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +98,14 @@
 		86FF02BC1D4A13B30090F12C /* HYRMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRMenuCell.h; sourceTree = "<group>"; };
 		86FF02BD1D4A13B30090F12C /* HYRMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRMenuCell.m; sourceTree = "<group>"; };
 		86FF02BE1D4A13B30090F12C /* HYRMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYRMenuCell.xib; sourceTree = "<group>"; };
+		86FF02C11D4A246D0090F12C /* HYRMenuDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRMenuDetailVC.h; sourceTree = "<group>"; };
+		86FF02C21D4A246D0090F12C /* HYRMenuDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRMenuDetailVC.m; sourceTree = "<group>"; };
+		86FF02C41D4A28DA0090F12C /* HYRDetailScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRDetailScrollView.h; sourceTree = "<group>"; };
+		86FF02C51D4A28DA0090F12C /* HYRDetailScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRDetailScrollView.m; sourceTree = "<group>"; };
+		86FF02C71D4A292D0090F12C /* HYRDetailMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRDetailMain.h; sourceTree = "<group>"; };
+		86FF02C81D4A292D0090F12C /* HYRDetailMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRDetailMain.m; sourceTree = "<group>"; };
+		86FF02CD1D4A2E650090F12C /* HYRHeaderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYRHeaderImageView.h; sourceTree = "<group>"; };
+		86FF02CE1D4A2E650090F12C /* HYRHeaderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYRHeaderImageView.m; sourceTree = "<group>"; };
 		B1C5ED33332E1852B04DD939 /* Pods-Cparadise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cparadise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cparadise/Pods-Cparadise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -310,6 +322,12 @@
 				86FF02BC1D4A13B30090F12C /* HYRMenuCell.h */,
 				86FF02BD1D4A13B30090F12C /* HYRMenuCell.m */,
 				86FF02BE1D4A13B30090F12C /* HYRMenuCell.xib */,
+				86FF02C41D4A28DA0090F12C /* HYRDetailScrollView.h */,
+				86FF02C51D4A28DA0090F12C /* HYRDetailScrollView.m */,
+				86FF02C71D4A292D0090F12C /* HYRDetailMain.h */,
+				86FF02C81D4A292D0090F12C /* HYRDetailMain.m */,
+				86FF02CD1D4A2E650090F12C /* HYRHeaderImageView.h */,
+				86FF02CE1D4A2E650090F12C /* HYRHeaderImageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +350,8 @@
 				86E345721D36BCD8002D6EBC /* HYRCategoryViewController.m */,
 				8678C2051D49284D00E00CF0 /* HYRMenusViewController.h */,
 				8678C2061D49284D00E00CF0 /* HYRMenusViewController.m */,
+				86FF02C11D4A246D0090F12C /* HYRMenuDetailVC.h */,
+				86FF02C21D4A246D0090F12C /* HYRMenuDetailVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -549,16 +569,20 @@
 			files = (
 				86E345561D36B18A002D6EBC /* AppDelegate.m in Sources */,
 				8678C20A1D492E7C00E00CF0 /* HYRMenu.m in Sources */,
+				86FF02C61D4A28DA0090F12C /* HYRDetailScrollView.m in Sources */,
 				8614F3C11D394E0200C7478C /* HYRHttpTool.m in Sources */,
 				86E345761D36C3A8002D6EBC /* HYRCategoryButton.m in Sources */,
 				86FF02BF1D4A13B30090F12C /* HYRMenuCell.m in Sources */,
 				86E345701D36BA68002D6EBC /* HYRRootViewController.m in Sources */,
+				86FF02CF1D4A2E650090F12C /* HYRHeaderImageView.m in Sources */,
 				8614F3BE1D394B0000C7478C /* HYRCategory.m in Sources */,
 				8678C2071D49284D00E00CF0 /* HYRMenusViewController.m in Sources */,
 				86E345731D36BCD8002D6EBC /* HYRCategoryViewController.m in Sources */,
 				8614F3BB1D39431300C7478C /* UIView+Category.m in Sources */,
+				86FF02C31D4A246D0090F12C /* HYRMenuDetailVC.m in Sources */,
 				86E3451A1D36AAA2002D6EBC /* main.m in Sources */,
 				86749A891D3972E200EFE1B8 /* HYRParse.m in Sources */,
+				86FF02C91D4A292D0090F12C /* HYRDetailMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

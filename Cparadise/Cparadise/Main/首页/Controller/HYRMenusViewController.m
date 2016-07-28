@@ -10,6 +10,8 @@
 #import "HYRMenu.h"
 #import "HYRHttpTool.h"
 #import "HYRMenuCell.h"
+#import "HYRMenuDetailVC.h"
+
 
 @interface HYRMenusViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -38,6 +40,11 @@
     [self sendRequest];
 }
 
+//隐藏tabbar
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = YES;
+}
 
 
 #pragma -mark 自定义方法
@@ -119,7 +126,11 @@
     return 80.0;
 }
 
-
+//点中某一行
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //跳转到这道菜的详情页面 并 把这道菜传过去
+    [self performSegueWithIdentifier:@"detail" sender:_menus[indexPath.row]];
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -127,14 +138,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+// 通过Segue跳转界面的 都是在这里传参数
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    //
+    HYRMenuDetailVC *menuDetailVC = segue.destinationViewController;
+    menuDetailVC.menu = sender;
+    
 }
-*/
+
 
 @end
